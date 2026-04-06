@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Infinite Gym Galati - Strength, cardio, and personalized training.">
+<title data-i18n="pageTitle">Infinite Gym Galați — Fără Limite. Doar Rezultate.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="lang-switch-mobile">
+    <span class="lang-btn active" onclick="setLanguage('ro')">RO</span>
+    <span class="lang-btn" onclick="setLanguage('en')">EN</span>
+  </div>
+  <a href="#about" onclick="closeMobileMenu()" data-i18n="navAbout">Despre</a>
+  <a href="#services" onclick="closeMobileMenu()" data-i18n="navServices">Servicii</a>
+  <a href="#schedule" onclick="closeMobileMenu()" data-i18n="navSchedule">Program</a>
+  <a href="#gallery" onclick="closeMobileMenu()" data-i18n="navGallery">Galerie</a>
+  <a href="#reviews" onclick="closeMobileMenu()" data-i18n="navReviews">Recenzii</a>
+  <a href="#contact" onclick="closeMobileMenu()" data-i18n="navContact">Contact</a>
+</nav>
+
+<!-- ===================== NAVBAR ===================== -->
+<header id="navbar">
+  <div class="nav-logo">INFINITE<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="navAbout">Despre</a></li>
+    <li><a href="#services" data-i18n="navServices">Servicii</a></li>
+    <li><a href="#schedule" data-i18n="navSchedule">Program</a></li>
+    <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+    <li><a href="#reviews" data-i18n="navReviews">Recenzii</a></li>
+    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+  </ul>
+  
+  <div class="nav-right">
+    <div class="lang-switch">
+      <span class="lang-btn active" onclick="setLanguage('ro')">RO</span>
+      <span class="lang-divider">|</span>
+      <span class="lang-btn" onclick="setLanguage('en')">EN</span>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="navJoin">Alătură-te</button>
+  </div>
+
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-slash"></div>
+  <div class="hero-slash"></div>
+  <div class="hero-slash"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-i18n="heroPre">Galați, România — Est. 2024</p>
+    <h1 class="hero-title">
+      INFINITE<br>
+      <span class="outline">GYM</span>
+      <span class="accent">.</span>
+    </h1>
+    <p class="hero-sub" data-i18n="heroSub">Fără limite. Doar rezultate.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="heroBtn1">Alătură-te Acum</button>
+      <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-i18n="heroBtn2">Vezi Programele</button>
+    </div>
+  </div>
+
+  <div class="hero-scroll" onclick="document.getElementById('stats').scrollIntoView({behavior:'smooth'})">
+    <span data-i18n="scrollText">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===================== STATS BAR ===================== -->
+<section id="stats">
+  <div class="stat-item">
+    <span class="stat-number" data-target="500">0</span>
+    <span class="stat-label" data-i18n="statMembers">Membri</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-target="20">0</span>
+    <span class="stat-label" data-i18n="statTrainers">Antrenori Experți</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-target="50">0</span>
+    <span class="stat-label" data-i18n="statEquip">Aparate</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number" data-target="5">0</span>
+    <span class="stat-label" data-i18n="statYears">Ani de Activitate</span>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="about-left reveal from-left">
+    <p class="about-label" data-i18n="aboutLabel">Cine Suntem</p>
+    <h2 class="about-title" data-i18n="aboutTitle">Construit pentru<br><span style="color:var(--accent)">Campioni</span></h2>
+    <p class="about-text" data-i18n="aboutText1">Infinite Gym Galați este un centru modern de fitness dedicat rezultatelor reale. Combinăm echipamente profesionale cu o comunitate pasionată care te împinge mai departe în fiecare zi.</p>
+    <p class="about-text" data-i18n="aboutText2">Fie că ești aici pentru a construi putere, pentru a-ți îmbunătăți rezistența sau pentru a-ți transforma stilul de viață — aceasta este arena ta. Fără scuze. Fără limite.</p>
+    <div class="about-features">
+      <div class="about-feat"><div class="feat-dot"></div><span data-i18n="aboutFeat1">Echipamente Profesionale Moderne</span></div>
+      <div class="about-feat"><div class="feat-dot"></div><span data-i18n="aboutFeat2">Antrenori Personali Certificați</span></div>
+      <div class="about-feat"><div class="feat-dot"></div><span data-i18n="aboutFeat3">Mediu Bazat pe Comunitate</span></div>
+      <div class="about-feat"><div class="feat-dot"></div><span data-i18n="aboutFeat4">Experiență în Continuă Îmbunătățire</span></div>
+    </div>
+  </div>
+
+  <div class="about-visual reveal from-right delay-2">
+    <div class="about-img-wrap">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoE3dDtXKqvRP9T5ZpYxknNrz1RFdj8ckHfv9T6qB1Bhyy1G1uD_vkjoO_U-eR4ofXMuRsOdTS7KDLO_1dCZCBNdAWIkOOXmJ0O8aNbecHgvKja_LDCJ6e5ohzPiMFx5VJvV_HsAw=w800-h1000-no" class="about-img-placeholder object-cover" alt="Infinite Gym Setup">
+      <div class="corner-tl"></div>
+      <div class="corner-br"></div>
+    </div>
+    <div class="about-badge" data-i18n="aboutBadge">CEA MAI BUNĂ<br>SALĂ DIN GALAȚI</div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services">
+  <div class="section-header reveal">
+    <p class="section-label" data-i18n="svcLabel">Ce Oferim</p>
+    <h2 class="section-title" data-i18n="svcTitle">Programele<br><span style="color:var(--accent)">Noastre</span></h2>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal delay-1">
+      <div class="svc-num">01</div>
+      <div class="svc-icon-svg">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v18M18 3v18M2 6h8M14 6h8M2 18h8M14 18h8M6 9h12M6 15h12"/></svg>
+      </div>
+      <h3 class="svc-title" data-i18n="svc1Title">Antrenament de Forță</h3>
+      <p class="svc-text" data-i18n="svc1Text">Construiește putere și masă musculară în zona noastră de greutăți libere, complet echipată, cu programe concepute pentru toate nivelurile.</p>
+    </div>
+    <div class="service-card reveal delay-2">
+      <div class="svc-num">02</div>
+      <div class="svc-icon-svg">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+      </div>
+      <h3 class="svc-title" data-i18n="svc2Title">Antrenament Cardio</h3>
+      <p class="svc-text" data-i18n="svc2Text">Depășește-ți limitele de rezistență cu aparate cardio de ultimă generație – benzi, biciclete, aparate de vâslit – și sesiuni cu energie ridicată.</p>
+    </div>
+    <div class="service-card reveal delay-3">
+      <div class="svc-num">03</div>
+      <div class="svc-icon-svg">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      </div>
+      <h3 class="svc-title" data-i18n="svc3Title">Coaching Personalizat</h3>
+      <p class="svc-text" data-i18n="svc3Text">Sesiuni unu-la-unu cu antrenori certificați care construiesc programe personalizate pe baza obiectivelor, stilului de viață și performanțelor tale.</p>
+    </div>
+    <div class="service-card reveal delay-4">
+      <div class="svc-num">04</div>
+      <div class="svc-icon-svg">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      </div>
+      <h3 class="svc-title" data-i18n="svc4Title">Programe de Fitness</h3>
+      <p class="svc-text" data-i18n="svc4Text">Programe structurate pe mai multe săptămâni pentru slăbit, creștere musculară, condiționare sportivă și fitness funcțional, menite să te motiveze.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="exp-bg"></div>
+  <div class="exp-lines">
+    <div class="exp-line"></div>
+    <div class="exp-line"></div>
+    <div class="exp-line"></div>
+  </div>
+  <div class="exp-content reveal">
+    <p class="exp-pre" data-i18n="expPre">Experiența Infinite</p>
+    <h2 class="exp-title" data-i18n="expTitle">
+      DEPĂȘEȘTE-ȚI<br>
+      <span class="line2">LIMITELE</span>
+    </h2>
+    <div class="exp-divider"></div>
+    <p class="exp-sub" data-i18n="expSub">Antrenează-te ca un campion. Recuperează-te ca un profesionist. Repetă.</p>
+    <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-i18n="expBtn">Începe Antrenamentul</button>
+  </div>
+</section>
+
+<!-- ===================== SCHEDULE ===================== -->
+<section id="schedule">
+  <div class="section-header reveal">
+    <p class="section-label" data-i18n="schedLabel">Orar Deschidere</p>
+    <h2 class="section-title" data-i18n="schedTitle">Suntem<br><span style="color:var(--accent)">Deschiși</span></h2>
+  </div>
+
+  <div class="schedule-grid">
+    <div class="schedule-card reveal delay-1">
+      <div class="sched-icon-svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      </div>
+      <p class="sched-day" data-i18n="schedDay1">Luni – Vineri</p>
+      <p class="sched-time">08:00 – 22:00</p>
+      <p class="sched-sub" data-i18n="schedSub1">5 zile · 14 ore de antrenament</p>
+    </div>
+    <div class="schedule-card reveal delay-2">
+      <div class="sched-icon-svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </div>
+      <p class="sched-day" data-i18n="schedDay2">Sâmbătă</p>
+      <p class="sched-time">09:00 – 17:00</p>
+      <p class="sched-sub" data-i18n="schedSub2">8 ore · Sesiuni de weekend</p>
+    </div>
+    <div class="schedule-card reveal delay-3">
+      <div class="sched-icon-svg">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+      </div>
+      <p class="sched-day" data-i18n="schedDay3">Duminică</p>
+      <p class="sched-time">09:00 – 14:00</p>
+      <p class="sched-sub" data-i18n="schedSub3">5 ore · Zi de recuperare activă</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery">
+  <div class="section-header reveal">
+    <p class="section-label" data-i18n="galLabel">În Interiorul Sălii</p>
+    <h2 class="section-title" data-i18n="galTitle">Arena<br><span style="color:var(--accent)">Noastră</span></h2>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <img src="SA.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-1">
+      <img src="image.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-2">
+      <img src="image copy.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-3">
+      <img src="image copy 2.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-1">
+      <img src="image copy 3.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-2">
+      <img src="image copy 4.png" class="gallery-ph object-cover">
+    </div>
+    <div class="gallery-item reveal delay-3">
+      <img src="image copy 5.png" class="gallery-ph object-cover">
+    </div>
+  </div>
+    
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section id="reviews" style="padding: 9rem 5vw; background: var(--black);">
+  <div class="section-header reveal">
+    <p class="section-label" data-i18n="revLabel">Ce Spun Membrii Noștri</p>
+    <h2 class="section-title" data-i18n="revTitle">Păreri de<br><span style="color:var(--accent)">Top 5 Stele</span></h2>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal delay-1">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev1">"Recomand cu toată încrederea! Personal calificat, curățenie, aparate noi, aer condiționat, toate condițiile optime pentru a te antrena fără griji!"</p>
+      <p class="review-author">— <span data-i18n="revAuthor1">Marina Mărginean</span></p>
+    </div>
+    <div class="review-card reveal delay-2">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev2">"Sala este foarte curată, aparatura este nouă, diversificată, muzică bună, iar personalul este înțelegător și dornic să te ajute! Într-un cuvânt, super! Recomand!"</p>
+      <p class="review-author">— <span data-i18n="revAuthor2">ADINA-NICOLETA TĂNASE</span></p>
+    </div>
+    <div class="review-card reveal delay-3">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev3">"Locație modernă și super primitoare. Aparate noi și foarte diversificate. Personal prietenos și profesionist. Recomand cu încredere!"</p>
+      <p class="review-author">— <span data-i18n="revAuthor3">Andrei Gheorghe</span></p>
+    </div>
+    <div class="review-card reveal delay-4">
+      <div class="stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev4">"Cea mai dotată și curată sală din Galați! Antrenori excepționali, gata să te ajute!"</p>
+      <p class="review-author">— <span data-i18n="revAuthor4">Luiza</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="reveal from-left">
+    <p class="section-label" data-i18n="contLabel">Unde Ne Găsești</p>
+    <h2 class="section-title" data-i18n="contTitle" style="font-size:clamp(2.5rem,4vw,4rem);margin-bottom:3rem;">Contactează-<br><span style="color:var(--accent)">Ne</span></h2>
+
+    <div class="contact-info-item">
+      <div class="ci-icon-svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      </div>
+      <div>
+        <p class="ci-label" data-i18n="contLoc">Locație</p>
+        <p class="ci-value">Strada Frunzei 61, 800402<br>Galați, România</p>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="ci-icon-svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      </div>
+      <div>
+        <p class="ci-label" data-i18n="contPhone">Telefon</p>
+        <p class="ci-value">0744 952 005</p>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="ci-icon-svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      </div>
+      <div>
+        <p class="ci-label" data-i18n="contHours">Ore Astăzi</p>
+        <p class="ci-value" id="todayHours">Loading...</p>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="ci-icon-svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      </div>
+      <div>
+        <p class="ci-label" data-i18n="contEmail">Email</p>
+        <p class="ci-value">contact@infinitegym.ro</p>
+      </div>
+    </div>
+
+    <button class="btn-primary" style="margin-top:1rem;" onclick="document.getElementById('chatbot-toggle').click()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span data-i18n="contChat">Scrie-ne</span>
+    </button>
+  </div>
+
+  <div class="reveal from-right delay-2">
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.6974261765103!2d28.0190764!3d45.4265704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6df5c295644d9%3A0x64d69f9468adf64b!2sInfinite%20Gym%20Galati!5e0!3m2!1sen!2sro!4v1"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div style="width:100%"><div class="footer-accent-line"></div></div>
+  <div class="footer-logo">INFINITE<span>.</span> GYM</div>
+  <p class="footer-copy">© <span id="currentYear"></span> Infinite Gym Galați · Strada Frunzei 61 · <span data-i18n="footerRights">Toate drepturile rezervate</span></p>
+</footer>
+
+<!-- ===================== CHATBOT ===================== -->
+<button id="chatbot-toggle" onclick="toggleChat()" title="Chat with us">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--black)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+</button>
+
+<div id="chatbot-window">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-avatar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+      </div>
+      <div>
+        <div class="chat-name">Infinite Bot</div>
+        <div class="chat-status" data-i18n="chatStatus">● Online Acum</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatCloseBtn" onclick="toggleChat()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Întreabă-mă orice..." data-i18n-placeholder="chatPlaceholder" onkeydown="if(event.key==='Enter') sendChat()"/>
+    <button class="chat-send" onclick="sendChat()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
